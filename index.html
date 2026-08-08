@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Jamir Kurt Quillang, a BSIT-AIT student exploring web development, programming, software development, and artificial intelligence." />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:title" content="Jamir Kurt Quillang | BSIT-AIT Developer Portfolio" />
+    <meta property="og:description" content="A student portfolio for learning, building, and exploring technology." />
+    <meta property="og:type" content="website" />
+    <title>Jamir Kurt Quillang | BSIT-AIT Developer Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307111f'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='25' font-weight='700' fill='%237dd3fc'%3EJKQ%3C/text%3E%3C/svg%3E" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } };</script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="antialiased">
+    <div class="site-grid" aria-hidden="true"></div>
+    <div id="loader" class="loader" aria-hidden="true"><span>JKQ</span></div>
+
+    <header id="site-header" class="site-header">
+      <nav class="nav-shell container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Jamir Kurt Quillang, home"><span>JKQ</span><small>Jamir Kurt Quillang</small></a>
+        <button id="menu-button" class="icon-button menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links"><i></i><i></i><i></i></button>
+        <div id="nav-links" class="nav-links">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#ai">AI Journey</a><a href="#contact">Contact</a>
+          <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> SYSTEM ONLINE · STUDENT PORTFOLIO</p>
+          <h1>Hi, I’m <em>Jamir Kurt<br />Quillang.</em></h1>
+          <p class="hero-subtitle">BSIT-AIT Student Building for the Future.</p>
+          <p class="lead">I’m a BSIT-AIT student exploring web development, programming, software development, and artificial intelligence. I enjoy turning ideas into interactive digital experiences while continuously improving my technical skills.</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">Explore My Work <span>→</span></a><a class="button secondary" href="#contact">Let’s Connect</a><a id="resume-link" class="text-link" href="assets/Jamir-Kurt-Quillang-Resume.pdf" download>Download Resume <span>↓</span></a></div>
+        </div>
+        <div class="terminal-wrap reveal" aria-label="Developer terminal showing student information">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="terminal">
+            <div class="terminal-top"><span class="dots"><i></i><i></i><i></i></span><span>jamir@portfolio: ~</span><span class="terminal-status">● online</span></div>
+            <div class="terminal-body" id="terminal-body"></div>
+          </div>
+          <div class="float-chip chip-one">&lt;/&gt; building</div><div class="float-chip chip-two">AI · learning</div>
+        </div>
+      </section>
+
+      <section id="about" class="section container split-section">
+        <div class="section-intro reveal"><p class="eyebrow">01 · ABOUT</p><h2>Who I am,<br /><em>and where I’m headed.</em></h2></div>
+        <div class="about-content reveal"><p>I’m Jamir Kurt Quillang, a BSIT-AIT student interested in building useful digital experiences and learning how modern software works. I’m continuously developing skills in frontend and backend development, databases, programming, AI, and chatbots.</p><p>I’m building projects, exploring new concepts, and improving through practice—one meaningful step at a time.</p>
+          <article class="education-card"><div class="card-icon">⌘</div><div><p class="card-label">EDUCATION</p><h3>BSIT – AIT</h3><p>Bachelor of Science in Information Technology – Application and Internet Technology</p></div><span class="status-pill">Currently Studying</span></article>
+        </div>
+      </section>
+
+      <section class="section journey-section"><div class="container"><div class="section-heading reveal"><p class="eyebrow">02 · PATH</p><h2>My Developer <em>Journey</em></h2><p>A growing path shaped by curiosity, practical work, and continuous improvement.</p></div><ol class="journey-grid"><li class="reveal"><b>01</b><span>Learning Programming</span></li><li class="reveal"><b>02</b><span>Exploring Web Development</span></li><li class="reveal"><b>03</b><span>Building Academic Projects</span></li><li class="reveal"><b>04</b><span>Working With Databases</span></li><li class="reveal"><b>05</b><span>Developing Web Applications</span></li><li class="reveal"><b>06</b><span>Exploring AI and Chatbots</span></li><li class="reveal"><b>07</b><span>Continuously Improving</span></li></ol></div></section>
+
+      <section id="skills" class="section container"><div class="section-heading reveal"><p class="eyebrow">03 · TOOLKIT</p><h2>Skills I’m <em>Developing</em></h2><p>These technologies reflect learning in progress—not claims of mastery.</p></div><div id="skills-grid" class="skills-grid"></div></section>
+
+      <section id="projects" class="section projects-section"><div class="container"><div class="section-heading reveal"><p class="eyebrow">04 · SELECTED WORK</p><h2>Featured <em>Projects</em></h2><p>Web experiences and development work that reflect the projects I’ve been building.</p></div><div id="project-filters" class="filters reveal" aria-label="Filter projects"></div><div id="projects-grid" class="projects-grid"></div></div></section>
+
+      <section id="ai" class="section container ai-section"><div class="ai-panel reveal"><div class="ai-copy"><p class="eyebrow">05 · EXPLORATION</p><h2>Exploring Artificial <em>Intelligence</em></h2><p>I’m currently learning how AI systems and chatbots are built. My goal is to understand how conversational systems work, how APIs can be integrated, how models process information, and how intelligent applications can be developed.</p><span class="status-pill">CURRENTLY LEARNING</span></div><div class="ai-visual"><div class="ai-core">AI</div><ul><li>AI Fundamentals</li><li>Chatbot Development</li><li>API Integration</li><li>Prompt Engineering</li><li>Natural Language Processing</li><li>AI Application Development</li></ul></div></div><div class="learning-path reveal"><p>AI LEARNING PATH</p><div><span>Programming</span><i>↓</i><span>APIs</span><i>↓</i><span>AI Fundamentals</span><i>↓</i><span>Chatbots</span><i>↓</i><span>AI Applications</span></div></div></section>
+
+      <section id="learning" class="section container"><div class="section-heading reveal"><p class="eyebrow">06 · FOCUS</p><h2>What I’m <em>Learning</em></h2></div><div id="learning-grid" class="learning-grid"></div></section>
+
+      <section class="section container"><div class="section-heading reveal"><p class="eyebrow">07 · CONTRIBUTION</p><h2>What I Can <em>Work On</em></h2><p>Student-level work where I can learn, contribute, and grow with a project.</p></div><div class="service-list reveal"><span>Student Web Applications</span><span>Simple CRUD Systems</span><span>Responsive Websites</span><span>Database-Connected Applications</span><span>Academic Projects</span><span>Beginner JavaScript Applications</span><span>Beginner PHP Applications</span><span>Experimental AI / Chatbot Projects</span></div></section>
+
+      <section class="section container"><div class="github-card reveal"><div><p class="eyebrow">08 · CODE</p><h2>Code &amp; <em>Projects</em></h2><p>My GitHub profile is ready to be linked here when I set up my public repositories.</p></div><a id="github-cta" class="button primary disabled-link" href="#" aria-disabled="true">Visit GitHub <span>↗</span></a></div></section>
+
+      <section id="contact" class="section container contact-section"><div class="section-heading reveal"><p class="eyebrow">09 · CONTACT</p><h2>Let’s Build <em>Something</em></h2><p>Whether it’s a project idea, collaboration, or simply connecting with another developer, feel free to reach out.</p></div><div class="contact-grid"><div class="contact-details reveal"><a id="email-link" class="contact-item" href="mailto:jamirkurtquillang@gmail.com"><span>✉</span><div><small>EMAIL</small><strong id="email-text">jamirkurtquillang@gmail.com</strong></div></a><a id="github-link" class="contact-item disabled-link" href="#" aria-disabled="true"><span>⌘</span><div><small>GITHUB</small><strong>Replace with your profile</strong></div></a><a id="linkedin-link" class="contact-item disabled-link" href="#" aria-disabled="true"><span>in</span><div><small>LINKEDIN</small><strong>Replace with your profile</strong></div></a></div><form id="contact-form" class="contact-form reveal" novalidate><div class="form-row"><label>Name<input name="name" required autocomplete="name" /></label><label>Email<input name="email" type="email" required autocomplete="email" /></label></div><label>Subject<input name="subject" autocomplete="off" /></label><label>Message<textarea name="message" required rows="5"></textarea></label><p id="form-message" class="form-message" role="status" aria-live="polite"></p><button class="button primary" type="submit">Prepare Email <span>→</span></button><small>This frontend form opens your email app; a backend or email service can be connected later.</small></form></div></section>
+    </main>
+
+    <footer><div class="container footer-grid"><div><a class="brand" href="#home"><span>JKQ</span><small>Jamir Kurt Quillang</small></a><p>BSIT – AIT Student</p><p>Learning. Building. Exploring the future.</p><p class="footer-status">● Currently Learning &amp; Building</p></div><nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#ai">AI Journey</a><a href="#contact">Contact</a></nav><div class="footer-social"><a id="footer-github" class="disabled-link" href="#" aria-label="GitHub">⌘</a><a id="footer-linkedin" class="disabled-link" href="#" aria-label="LinkedIn">in</a><a id="footer-email" href="mailto:jamirkurtquillang@gmail.com" aria-label="Email">✉</a></div></div><div class="container footer-bottom"><span>© <span id="current-year"></span> Jamir Kurt Quillang. All Rights Reserved.</span><span>Built with HTML, Tailwind CSS &amp; Vanilla JavaScript.</span></div></footer>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+    <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title"><article><button id="modal-close" class="icon-button modal-close" type="button" aria-label="Close project details">×</button><div id="modal-content"></div></article></dialog>
+    <noscript><style>.loader{display:none}.nav-links{display:flex!important}.menu-button{display:none}</style></noscript>
+    <script src="js/script.js"></script>
+  </body>
+</html>
